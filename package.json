@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node contactServer.js",
-    "start-server": "nodemon contactServer.js"
+    "start-server": "nodemon --inspect contactServer.js",
+    "debug": "node --inspect-brk contactServer.js"
   },
   "repository": {
     "type": "git",
