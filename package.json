@@ -1,0 +1,21 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "nodemon attempt",
+  "main": "contactServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node contactServer.js",
+    "start-server": "nodemon contactServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pizuCoder/node-project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pizuCoder/node-project-1/issues"
+  },
+  "homepage": "https://github.com/pizuCoder/node-project-1#readme"
+}

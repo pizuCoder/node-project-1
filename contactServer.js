@@ -4,7 +4,7 @@ const querystring = require('querystring');
 
 const server = http.createServer((req, res) => {
   if (req.url === '/' && req.method === 'GET') {
-    fs.readFile('index.html', (err, data) => {
+    fs.readFile('contactform.html', (err, data) => {
       if (err) throw err;
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.write(data);
