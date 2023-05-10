@@ -12,13 +12,11 @@ const server = http.createServer((req, res) => {
     });
   } else if (req.url === '/submit' && req.method === 'POST') {
     let body = '';
-    req.on('data', chunk => {
-      body += chunk.toString();
-    });
+    req.on('data', chunk => body += chunk.toString());
     req.on('end', () => {
       const { name, email, message } = querystring.parse(body);
       const data = `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n\n`;
-      fs.appendFile('messages.txt', data, (err) => {
+      fs.appendFile('messages.txt', data, err => {
         if (err) throw err;
         res.writeHead(302, { 'Location': '/' });
         res.end();
@@ -31,6 +29,4 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(3000, () => {
-  console.log('Server running on port 3000');
-});
+server.listen(3000, () => console.log('Server running on port 3000'));
