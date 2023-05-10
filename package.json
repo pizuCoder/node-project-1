@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/pizuCoder/node-project-1/issues"
   },
-  "homepage": "https://github.com/pizuCoder/node-project-1#readme"
+  "homepage": "https://github.com/pizuCoder/node-project-1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }

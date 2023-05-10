@@ -10,3 +10,7 @@ Name: Chaman
 Email: testing123@test.com
 Message: chaman is chamaning
 
+Name: Chaman2
+Email: testing12cham@test.com
+Message: chams is chaming
+
